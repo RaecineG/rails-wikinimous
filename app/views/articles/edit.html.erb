@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Editing Article</h1>
+  <%= render 'form', article: @article %>
+</div>
+
+<div>
+  <%= link_to "Show", article_path, style: "text-decoration: none;" %> |
+  <%= link_to "Back", articles_path, style: "text-decoration: none;" %>
+</div>

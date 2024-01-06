@@ -1,0 +1,13 @@
+<div>
+<h1> <%= link_to "Wikinimous", articles_path, style: "text-decoration: none;" %> </h1>
+<%= link_to "New Article", new_article_path, style: "text-decoration: none;" %>
+</div>
+
+<div>
+<h1> <%= @article.title %> </h1>
+<%= link_to "✎", edit_article_path, style: "text-decoration: none;" %>
+<%= link_to "🗑️ ", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+<div>
+<div>
+<p> <%= @article.content %> </p>
+</div>
